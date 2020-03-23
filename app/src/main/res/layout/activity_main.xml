@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="20" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="60"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="20" />
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btncnc"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="20"
+                    android:onClick="canc_numb"
+                    android:text="Cancel the number "
+                    tools:text="Cancel the number" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="10" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="20"
+                    android:text="Number not found "
+                    android:textSize="30sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="10" />
+
+                <Button
+                    android:id="@+id/btnnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="20"
+                    android:onClick="cret_numb"
+                    android:text="Click for number" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="20" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="20" />
+    </LinearLayout>
+
+</LinearLayout>
